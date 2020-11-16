@@ -1,0 +1,48 @@
+.showLightbox {
+    display: block;
+    width: 300px;
+    background-color: #792;
+    position: fixed;
+    padding: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0px);
+    z-index: 999;
+    h2 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+.close-button {
+    color: white;
+    font-size: 2em;
+    bottom: 20px;
+    left: 270px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+    .showLightbox {
+        width: 400px;
+        margin-left: 550px;
+        margin-bottom: 100px;
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .close-button {
+        left: 370px;
+    }
+}
