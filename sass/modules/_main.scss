@@ -1,0 +1,24 @@
+    h1 {
+        text-align: center;
+        padding-top: 15px;
+        color: pink;
+        font-size: 36px;
+    }
+    
+    #app {
+        p {
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+    }
+    
+    body {
+        background-color: rosybrown;
+        scroll-behavior: smooth;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        #app p {
+            margin-top: 20px;
+        }
+    }
