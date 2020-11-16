@@ -1,4 +1,4 @@
-.showLightbox {
+.user_info.showLightbox {
     display: block;
     width: 300px;
     background-color: #792;
@@ -22,6 +22,7 @@
 
 .close-button {
     color: white;
+    top: 0;
     font-size: 2em;
     bottom: 20px;
     left: 270px;
@@ -30,10 +31,44 @@
     position: relative;
 }
 
+.user {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    img {
+        width: 80%;
+        margin-top: 10px;
+        margin-left: 62px;
+    }
+}
+
+.user-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0%;
+}
+
+.user_info {
+    width: 300px;
+    position: fixed;
+    display: block;
+    padding: 0;
+    transform: translateY(900px);
+}
+
+.user {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 @media screen and (min-width: 1024px) {
-    .showLightbox {
+    .user_info.showLightbox {
         width: 400px;
-        margin-left: 550px;
+        margin-left: 870px;
         margin-bottom: 100px;
         h2 {
             font-size: 30px;
@@ -43,6 +78,18 @@
         }
     }
     .close-button {
-        left: 370px;
+        left: 380px;
+    }
+    .user-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    .user {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
